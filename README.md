@@ -4,8 +4,7 @@ HLMenuItemCooldown 是带有冷却时间的CCMenuItemImage
 
 ## 使用方式：
 由于继承自于CCMenuItemImage,只要当做一个CCMenuItem使用就好。
-当前值支持一种实例化对象的方法：（详细见HLMenuItemCooldown.h）
-{% highlight objc %}
+当前值支持一种实例化对象的方法：（详细见HLMenuItemCooldown.h）  
 
 
 /** itemFromNormalImage:selectedImage:lastTimeStamp:interval:block
@@ -23,9 +22,8 @@ HLMenuItemCooldown 是带有冷却时间的CCMenuItemImage
             selectedImage:(NSString*)value2
             lastTimeStamp:(NSDate *)lastTimeStamp
                  interval:(NSTimeInterval)interval
-                    block:(void(^)(NSTimeInterval remainingTime))block;
+                    block:(void(^)(NSTimeInterval remainingTime))block;  
 
-{% endhighlight %}
 
 使用时，用该方法实例化对象HLMenuItemCooldown，并加到一个CCMenu中，即可见。
 
