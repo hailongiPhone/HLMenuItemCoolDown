@@ -9,7 +9,7 @@
 
 // Import the interfaces
 #import "HelloWorldLayer.h"
-#import "HLMenuItemCoolDown.h"
+#import "HLMenuItemCooldown.h"
 
 // HelloWorldLayer implementation
 @implementation HelloWorldLayer
@@ -52,13 +52,13 @@
         [pro runAction:[CCRepeatForever actionWithAction:[CCSequence actions:[CCProgressFromTo actionWithDuration:3 from:0 to:100], [CCDelayTime actionWithDuration:0.5],nil]]];
         
 //      Encapsulation this To a MenuItem
-        HLMenuItemCoolDown * coolDown = [HLMenuItemCoolDown itemFromNormalImage:@"Icon.png" selectedImage:@"Icon.png" lastTimeStamp:nil interval:2 block:^(NSTimeInterval remainingTime) {
+        HLMenuItemCooldown * coolDown = [HLMenuItemCooldown itemFromNormalImage:@"Icon.png" selectedImage:@"Icon.png" lastTimeStamp:nil interval:2 block:^(NSTimeInterval remainingTime) {
              NSLog(@"coolDownItem = %f",remainingTime);
         }];
         coolDown.position = ccp(240, 250);
         
         
-        HLMenuItemCoolDown * coolDown2 = [HLMenuItemCoolDown itemFromNormalImage:@"cd.png" selectedImage:@"cd.png" lastTimeStamp:[NSDate dateWithTimeIntervalSinceNow:-5] interval:20 block:^(NSTimeInterval remainingTime) {
+        HLMenuItemCooldown * coolDown2 = [HLMenuItemCooldown itemFromNormalImage:@"cd.png" selectedImage:@"cd.png" lastTimeStamp:[NSDate dateWithTimeIntervalSinceNow:-5] interval:20 block:^(NSTimeInterval remainingTime) {
             NSLog(@"coolDownItem = %f",remainingTime);
         }];
         coolDown2.position = ccp(240, 140);

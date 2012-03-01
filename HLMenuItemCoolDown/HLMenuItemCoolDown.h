@@ -14,7 +14,7 @@
  *  a Cooldown Buttons Inheritance from CCMenuItemImage
  *
  */
-@interface HLMenuItemCoolDown : CCMenuItemImage 
+@interface HLMenuItemCooldown : CCMenuItemImage 
 
 
 

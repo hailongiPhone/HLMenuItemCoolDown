@@ -6,11 +6,11 @@
 //  Copyright HaiLong. All rights reserved.
 //
 
-#import "HLMenuItemCoolDown.h"
+#import "HLMenuItemCooldown.h"
 
 #define kProgressPrecision      0.001
 
-@interface HLMenuItemCoolDown ()
+@interface HLMenuItemCooldown ()
 @property (nonatomic, retain) NSDate * lastTimeStamp;
 @property (nonatomic, assign) NSTimeInterval interval;
 @property (nonatomic, retain) NSString * normalName;
@@ -23,7 +23,7 @@
 - (NSTimeInterval)remainingTime;
 @end
 
-@implementation HLMenuItemCoolDown
+@implementation HLMenuItemCooldown
 @synthesize lastTimeStamp = _lastTimeStamp;
 @synthesize interval = _interval;
 @synthesize blockHL = _blockHL;
@@ -43,8 +43,8 @@
                  interval:(NSTimeInterval)interval
                     block:(void(^)(NSTimeInterval remainingTime))block
 {
-    HLMenuItemCoolDown * tmp = [self itemFromNormalImage:value selectedImage:value2 disabledImage:nil block:^(id sender) {
-        HLMenuItemCoolDown * tmp = sender;    
+    HLMenuItemCooldown * tmp = [self itemFromNormalImage:value selectedImage:value2 disabledImage:nil block:^(id sender) {
+        HLMenuItemCooldown * tmp = sender;    
         NSTimeInterval remaining = [tmp remainingTime];
         if (remaining < kProgressPrecision) {
             tmp.lastTimeStamp = [NSDate date];

@@ -123,7 +123,7 @@
 		D977FE8114FE1903001CC5FD /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D977FE8014FE1903001CC5FD /* RootViewController.m */; };
 		D977FE8414FE1903001CC5FD /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D977FE8314FE1903001CC5FD /* HelloWorldLayer.m */; };
 		D977FE9C14FE264F001CC5FD /* cd.png in Resources */ = {isa = PBXBuildFile; fileRef = D977FE9B14FE264E001CC5FD /* cd.png */; };
-		D9B9B2DC14FF287600085764 /* HLMenuItemCoolDown.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B9B2DB14FF287600085764 /* HLMenuItemCoolDown.m */; };
+		D9B9B2E514FF42D200085764 /* HLMenuItemCooldown.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B9B2E414FF42D200085764 /* HLMenuItemCooldown.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -363,8 +363,8 @@
 		D977FE8314FE1903001CC5FD /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		D977FE8514FE1903001CC5FD /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		D977FE9B14FE264E001CC5FD /* cd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cd.png; sourceTree = "<group>"; };
-		D9B9B2DA14FF287600085764 /* HLMenuItemCoolDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLMenuItemCoolDown.h; sourceTree = "<group>"; };
-		D9B9B2DB14FF287600085764 /* HLMenuItemCoolDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLMenuItemCoolDown.m; sourceTree = "<group>"; };
+		D9B9B2E314FF42D200085764 /* HLMenuItemCooldown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLMenuItemCooldown.h; sourceTree = "<group>"; };
+		D9B9B2E414FF42D200085764 /* HLMenuItemCooldown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLMenuItemCooldown.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -421,7 +421,7 @@
 		D977FD2A14FE18FA001CC5FD /* HLCooldownButtonTest */ = {
 			isa = PBXGroup;
 			children = (
-				D9B9B2D914FF287600085764 /* HLMenuItemCoolDown */,
+				D9B9B2E214FF42D200085764 /* HLMenuItemCooldown */,
 				D977FE7C14FE1903001CC5FD /* AppDelegate.h */,
 				D977FE7D14FE1903001CC5FD /* AppDelegate.m */,
 				D977FE7F14FE1903001CC5FD /* RootViewController.h */,
@@ -765,13 +765,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D9B9B2D914FF287600085764 /* HLMenuItemCoolDown */ = {
+		D9B9B2E214FF42D200085764 /* HLMenuItemCooldown */ = {
 			isa = PBXGroup;
 			children = (
-				D9B9B2DA14FF287600085764 /* HLMenuItemCoolDown.h */,
-				D9B9B2DB14FF287600085764 /* HLMenuItemCoolDown.m */,
+				D9B9B2E314FF42D200085764 /* HLMenuItemCooldown.h */,
+				D9B9B2E414FF42D200085764 /* HLMenuItemCooldown.m */,
 			);
-			path = HLMenuItemCoolDown;
+			path = HLMenuItemCooldown;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -943,7 +943,7 @@
 				D977FE7E14FE1903001CC5FD /* AppDelegate.m in Sources */,
 				D977FE8114FE1903001CC5FD /* RootViewController.m in Sources */,
 				D977FE8414FE1903001CC5FD /* HelloWorldLayer.m in Sources */,
-				D9B9B2DC14FF287600085764 /* HLMenuItemCoolDown.m in Sources */,
+				D9B9B2E514FF42D200085764 /* HLMenuItemCooldown.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
