@@ -7,18 +7,18 @@ HLMenuItemCooldown 是带有冷却时间的CCMenuItemImage
 当前值支持一种实例化对象的方法：（详细见HLMenuItemCooldown.h）  
 
 
-/** itemFromNormalImage:selectedImage:lastTimeStamp:interval:block
- *
- *  @param  value               普通状态下的图标
- *  @param  value2              点击选中状态下图标
- *  @param  lastTimeStamp       上一次更新时间
- *  @param  interval            cd时间间隔
- *  @param  block               其参数remainingTime 是这这一次CD的剩余时间，
- *                              remainingTime > 0 Cooldown还没有完成
- *
- *  @return HLMenuItemCoolDown 
- */
-+(id) itemFromNormalImage:(NSString*)value 
+	/** 					itemFromNormalImage:selectedImage:lastTimeStamp:interval:block
+	*
+ 	*  @param  value               普通状态下的图标
+	*  @param  value2              点击选中状态下图标
+ 	*  @param  lastTimeStamp       上一次更新时间
+ 	*  @param  interval            cd时间间隔
+ 	*  @param  block               其参数remainingTime 是这这一次CD的剩余时间，
+	*                              remainingTime > 0 Cooldown还没有完成
+	*
+	*  @return HLMenuItemCoolDown 
+	*/
+	+(id) itemFromNormalImage:(NSString*)value 
             selectedImage:(NSString*)value2
             lastTimeStamp:(NSDate *)lastTimeStamp
                  interval:(NSTimeInterval)interval
@@ -31,10 +31,10 @@ HLMenuItemCooldown 是带有冷却时间的CCMenuItemImage
 
 
 
-HLMenuItemCooldown * coolDown2 = [HLMenuItemCooldown itemFromNormalImage:@"cd.png" selectedImage:@"cd.png" lastTimeStamp:[NSDate dateWithTimeIntervalSinceNow:-5] interval:20 block:^(NSTimeInterval remainingTime) {
+	HLMenuItemCooldown * coolDown2 = [HLMenuItemCooldown 	itemFromNormalImage:@"cd.png" selectedImage:@"cd.png" 	lastTimeStamp:[NSDate dateWithTimeIntervalSinceNow:-5] interval:20 block:^(NSTimeInterval remainingTime) {
             NSLog(@"coolDownItem = %f",remainingTime);
         }];
-CCMenu * menu = [CCMenu menuWithItems:coolDown2, nil];
+	CCMenu * menu = [CCMenu menuWithItems:coolDown2, nil];
 
 
 
