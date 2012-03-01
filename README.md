@@ -5,6 +5,9 @@ HLMenuItemCooldown 是带有冷却时间的CCMenuItemImage
 ## 使用方式：
 由于继承自于CCMenuItemImage,只要当做一个CCMenuItem使用就好。
 当前值支持一种实例化对象的方法：（详细见HLMenuItemCooldown.h）
+{% highlight objc %}
+
+
 /** itemFromNormalImage:selectedImage:lastTimeStamp:interval:block
  *
  *  @param  value               普通状态下的图标
@@ -22,14 +25,20 @@ HLMenuItemCooldown 是带有冷却时间的CCMenuItemImage
                  interval:(NSTimeInterval)interval
                     block:(void(^)(NSTimeInterval remainingTime))block;
 
+{% endhighlight %}
+
 使用时，用该方法实例化对象HLMenuItemCooldown，并加到一个CCMenu中，即可见。
 
 示例代码如下：
+
+
 
 HLMenuItemCooldown * coolDown2 = [HLMenuItemCooldown itemFromNormalImage:@"cd.png" selectedImage:@"cd.png" lastTimeStamp:[NSDate dateWithTimeIntervalSinceNow:-5] interval:20 block:^(NSTimeInterval remainingTime) {
             NSLog(@"coolDownItem = %f",remainingTime);
         }];
 CCMenu * menu = [CCMenu menuWithItems:coolDown2, nil];
+
+
 
 详细见示例代码中的HelloWorldLayer.m文件
 
